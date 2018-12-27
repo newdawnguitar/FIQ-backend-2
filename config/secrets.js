@@ -136,9 +136,9 @@ module.exports = {
 
 //constructing Postgres connection string
 if(process.env.NODE_ENV === 'test-travis') {
-  module.exports.postgres = 'postgres://postgres@127.0.0.1/test_travis_ci';
+  module.exports.postgres = 'postgres://umdzysjlyfwxch:3b413e1055f5e9bd19d1807adb167cdc8b4dfab4bf66646ccb44a8a743b49371@ec2-174-129-25-182.compute-1.amazonaws.com:5432/dbiv9tkgtgk3ik';
 } else if(process.env.NODE_ENV === 'test') {
-  module.exports.postgres = 'postgres://yhnavein:123@127.0.0.1/test';
+  module.exports.postgres = 'postgres://umdzysjlyfwxch:3b413e1055f5e9bd19d1807adb167cdc8b4dfab4bf66646ccb44a8a743b49371@ec2-174-129-25-182.compute-1.amazonaws.com:5432/dbiv9tkgtgk3ik';
 } else {
-  module.exports.postgres = process.env.DATABASE_URL || 'postgres://yhnavein:123@127.0.0.1/prod';
+  module.exports.postgres = process.env.DATABASE_URL || 'postgres://umdzysjlyfwxch:3b413e1055f5e9bd19d1807adb167cdc8b4dfab4bf66646ccb44a8a743b49371@ec2-174-129-25-182.compute-1.amazonaws.com:5432/dbiv9tkgtgk3ik';
 }
